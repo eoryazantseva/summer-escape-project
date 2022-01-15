@@ -64,11 +64,70 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width: 80%;
+  background: var(--secondary-color);
+  margin-top: 20px;
+  background: var(--secondary-color);
 }
+
 aside {
   flex: 1;
+  border: 2px solid var(--branding-color);
+  border-radius: 10px;
+  background: white;
+}
+aside button {
+  display: inline-block;
+  color: var(--branding-color);
+  background: var(--secondary-color);
+  border: solid 1px var(--branding-color);
+}
+.search-form {
+  display: flex;
+  justify-content: center;
+  border: solid 1px var(--branding-color);
+}
+
+.secondary-content,
+.main-content {
+  padding: 30px;
+}
+.secondary-content p {
+  font-size: 15px;
+  text-align: center;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+.social-links a {
+  margin: 5px;
+  color: var(--branding-color);
+  background: var(--secondary-color);
+  padding: 5px 9px;
+  font-size: 16px;
+  border-radius: 10%;
+  transition: all 100ms ease-in-out;
+  border: solid 1px var(--branding-color);
+}
+.secondary-content .social-links a:hover {
+  color: white;
+  background-color: var(--branding-color);
 }
 article {
   flex: 3;
+  padding: 20px;
+  background: white;
+}
+footer {
+  background: var(--secondary-color);
+  border-radius: 10px;
+}
+footer p {
+  font-size: 15px;
+}
+footer {
+  text-align: center;
+  margin: 15px 0;
+  padding: 20px;
 }
