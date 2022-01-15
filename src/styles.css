@@ -35,6 +35,7 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-top: 10px;
 }
 
 nav li {
@@ -47,7 +48,7 @@ nav li a {
   color: #1b262c;
   text-decoration: none;
 }
-nav li a:hover,
+nav a:hover,
 nav li.active a {
   color: var(--branding-color);
   transition: all 100ms ease-in-out;
@@ -110,7 +111,7 @@ aside button {
   transition: all 100ms ease-in-out;
   border: solid 1px var(--branding-color);
 }
-.secondary-content .social-links a:hover {
+.social-links a:hover {
   color: white;
   background-color: var(--branding-color);
 }
