@@ -99,7 +99,7 @@ aside button {
   border: solid 1px var(--branding-color);
   border-radius: 10px;
   background: white;
-  padding-bottom: 250px;
+  padding-bottom: 200px;
 }
 .secondary-content p {
   font-size: 15px;
@@ -149,7 +149,7 @@ article {
 .top-article-photos {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .small-photo {
@@ -170,7 +170,20 @@ article {
   color: white;
   cursor: pointer;
 }
-
+.destination {
+  display: flex;
+  flex-direction: row;
+}
+.destination .small-photo {
+  flex: 1;
+}
+.destination-info {
+  flex: 3;
+  padding: 0 50px;
+}
+.destination .btn-branding {
+  float: none;
+}
 /* Footer styling */
 
 footer {
