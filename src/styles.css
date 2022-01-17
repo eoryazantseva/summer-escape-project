@@ -27,6 +27,7 @@ h1 {
   font-size: 42px;
   text-align: center;
 }
+
 /* Navigation bar styling */
 
 .logo {
@@ -183,6 +184,37 @@ article {
 }
 .destination .btn-branding {
   float: none;
+}
+.feedback {
+  text-align: center;
+}
+.feedback h2 {
+  font-size: 25px;
+}
+.rate-experience-form {
+  display: flex;
+  justify-content: center;
+}
+.rate-experience-form,
+.name-form,
+.email-form,
+.reasons-select-form,
+.feedback-form {
+  margin-bottom: 30px;
+}
+
+label {
+  width: 150px;
+  display: inline-block;
+  text-align: right;
+}
+
+.rate-experience-form label {
+  text-align: left;
+}
+
+#feedback {
+  height: 150px;
 }
 /* Footer styling */
 
