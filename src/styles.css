@@ -89,6 +89,18 @@ aside button {
   color: var(--branding-color);
   background: var(--secondary-color);
 }
+aside .index-aside {
+  padding-bottom: 320px;
+}
+aside .reviews-aside {
+  padding-bottom: 85px;
+}
+aside .feedback-aside {
+  padding-bottom: 35px;
+}
+aside .contact-aside {
+  padding-bottom: 0px;
+}
 .search-form {
   display: flex;
   justify-content: center;
@@ -100,7 +112,6 @@ aside button {
   border: solid 1px var(--branding-color);
   border-radius: 10px;
   background: white;
-  padding-bottom: 200px;
 }
 .secondary-content p {
   font-size: 15px;
@@ -126,9 +137,14 @@ aside button {
   background-color: var(--branding-color);
 }
 .ad-widget {
-  margin: 80px 15px 80px;
+  margin: 80px 15px 20px;
   max-width: 400px;
   max-height: 400px;
+}
+aside .contact-aside .ad-widget {
+  margin: 20px 15px 10px;
+  max-height: 300px;
+  max-width: 300px;
 }
 
 /* Main content styling */
@@ -212,10 +228,30 @@ label {
 .rate-experience-form label {
   text-align: left;
 }
-
-#feedback {
-  height: 150px;
+.feedback-form label {
+  vertical-align: top;
 }
+#feedback {
+  height: 120px;
+}
+
+#name,
+#email,
+#reason-select,
+#feedback {
+  width: 600px;
+}
+.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding: 20px 20px;
+}
+
+.contact-details {
+  margin: 0 40px 20px;
+}
+
 /* Footer styling */
 
 footer {
