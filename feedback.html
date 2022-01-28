@@ -39,40 +39,38 @@
 
     <main>
       <!-- Side bar -->
-      <aside>
-        <div class="secondary-content feedback-aside">
-          <p>Find us on social media!</p>
-          <div class="social-links">
-            <a href="#" target="_blank" title="Facebook Profile"
-              ><i class="fab fa-facebook"></i
-            ></a>
-            <a href="#" target="_blank" title="Twitter Profile"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a href="#" target="_blank" title="Instagram Profile">
-              <i class="fab fa-instagram"></i
-            ></a>
-            <a href="#" target="_blank" title="YouTube Profile">
-              <i class="fab fa-youtube"></i
-            ></a>
-          </div>
-          <div class="search-form">
-            <input
-              type="search"
-              id="site-search"
-              name="q"
-              aria-label="Search through site content"
-              placeholder="Search"
-            />
-            <button><i class="fas fa-search"></i></button>
-          </div>
-           <img src="/img/ad-2.jpg" class="ad-widget" alt="ad-widget" />
+     <aside class="feedback-aside">
+        <p>Find us on social media!</p>
+        <div class="social-links">
+          <a href="#" target="_blank" title="Facebook Profile"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="#" target="_blank" title="Twitter Profile"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="#" target="_blank" title="Instagram Profile">
+            <i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" target="_blank" title="YouTube Profile">
+            <i class="fab fa-youtube"></i
+          ></a>
         </div>
+        <div class="search-form">
+          <input
+            type="search"
+            id="site-search"
+            name="q"
+            aria-label="Search through site content"
+            placeholder="Search"
+          />
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+        <img src="/img/ad-2.jpg" class="ad-widget widget-1" alt="ad-widget" />
       </aside>
 
       <!-- Main contents -->
 
-      <article>
+      <article class="article-feedback">
           <h1>Website Feedback</h1>
         <div class="main-content feedback">
         
@@ -111,31 +109,51 @@
             <label for="good">Good</label>
           </div>
 </div>
-<div class="name-form">
-<label for="name">Name:</label>
-<input type="text" id="name">
+
+
+<div class="container-feedback">
+<div class="row">
+  <div class="col-25">
+    <label for="name">Name:</label>
+  </div>
+  <div class="col-75">
+    <input type="text" id="name" placeholder="Your name...">
+  </div>
 </div>
 
-<div class="email-form">
-  <label for="email">Email:</label>
-<input type="email" id="email">
-
+<div class="row">
+  <div class="col-25">
+    <label for="email">Email:</label>
+  </div>
+  <div class="col-75">
+    <input type="email" id="email" placeholder="Your email address...">
+  </div>
 </div>
 
-<div class="reasons-select-form">
-          <label for="reason-select">I would like to:</label>
-          <select name="reasons" id="reason-select">
-            <option value="compliment">Give a compliment</option>
+<div class="row">
+  <div class="col-25">
+    <label for="reason-select">I would like to:</label>
+  </div>
+  <div class="col-75">
+    <select name="reason" id="reason-select">
+      <option value="compliment">Give a compliment</option>
             <option value="complaint">File a complaint</option>
             <option value="review">Share a review</option>
             <option value="suggestion">Make a suggestion</option>
-          </select>
-      </div>
+    </select>
+  </div>
+</div>
 
-      <div class="feedback-form">
-        <label for="feedback">Your feedback:</label>
-        <input type="text" id="feedback">
-      </div>
+<div class="row">
+  <div class="col-25">
+    <label for="feedback">Feedback:</label>
+  </div>
+  <div class="col-75">
+    <textarea name="feedback" id="feedback" placeholder="Your feedback..." style="height: 100px;"></textarea>
+  </div>
+</div>
+
+</div>
 
       <button class="btn-branding">Submit</button>
       </article>
