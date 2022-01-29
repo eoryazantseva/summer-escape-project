@@ -27,6 +27,9 @@ h1 {
   font-size: 42px;
   text-align: center;
 }
+h2 {
+  font-size: 35px;
+}
 img {
   border-radius: 4px;
 }
@@ -174,7 +177,7 @@ article {
   padding: 0 15px 15px 15px;
 }
 
-.main-content {
+section {
   overflow: hidden;
   background: white;
   padding: 15px;
@@ -241,7 +244,7 @@ article {
 }
 .destination-info {
   flex: 3;
-  padding: 0 50px;
+  text-align: center;
 }
 .destination .btn-branding {
   float: none;
@@ -249,7 +252,7 @@ article {
 
 /* Reviews page main content styling */
 
-.reviews-article .main-content {
+.reviews-article section {
   margin-bottom: 40px;
 }
 
@@ -346,7 +349,7 @@ footer p {
     font-size: 35px;
   }
   h2 {
-    font-size: 20px;
+    font-size: 28px;
   }
   label {
     font-size: 16px;
@@ -354,16 +357,12 @@ footer p {
   p {
     font-size: 16px;
   }
-  #site-search {
-    max-width: 190px;
-    border: 0.5px solid var(--branding-color);
-  }
+}
 
-  .btn-branding {
-    font-size: 15px;
-    line-height: 22px;
-    padding: 8px 20px;
-  }
+.btn-branding {
+  font-size: 15px;
+  line-height: 22px;
+  padding: 8px 20px;
 }
 
 @media (max-width: 1400px) {
@@ -372,10 +371,10 @@ footer p {
     font-size: 80%;
   }
   h1 {
-    font-size: 30px;
+    font-size: 32px;
   }
   h2 {
-    font-size: 20px;
+    font-size: 25px;
   }
   label {
     font-size: 16px;
@@ -396,10 +395,10 @@ footer p {
 
 @media (max-width: 1296px) {
   h1 {
-    font-size: 28px;
+    font-size: 30px;
   }
   h2 {
-    font-size: 19px;
+    font-size: 23px;
   }
   label {
     font-size: 15px;
@@ -443,7 +442,7 @@ footer p {
     height: 100px;
   }
   h1 {
-    font-size: 24px;
+    font-size: 27px;
   }
   h2 {
     font-size: 22px;
@@ -499,7 +498,7 @@ footer p {
   }
 
   h1 {
-    font-size: 22px;
+    font-size: 25px;
   }
   h2 {
     font-size: 20px;
