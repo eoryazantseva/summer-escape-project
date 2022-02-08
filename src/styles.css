@@ -571,6 +571,7 @@ footer p {
   h2 {
     font-size: 18px;
     text-align: center;
+    margin: 0 5px 10px 5px;
   }
   .btn-branding {
     font-size: 10px;
@@ -596,7 +597,7 @@ footer p {
   .container-feedback textarea {
     width: 95%;
     margin-top: 0;
-    padding: 5px 12px;
+    padding: 5px 0px 5px 12px;
   }
   .col-25 {
     text-align: left;
@@ -620,10 +621,10 @@ footer p {
     font-size: 45%;
   }
   h1 {
-    font-size: 20px;
+    font-size: 17px;
   }
   h2 {
-    font-size: 15px;
+    font-size: 13px;
   }
   p {
     font-size: 10px;
@@ -636,6 +637,9 @@ footer p {
   }
   .contacts {
     padding: 0;
+  }
+  label {
+    font-size: 10px;
   }
   address {
     padding: 10px 15px;
