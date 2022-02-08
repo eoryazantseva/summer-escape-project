@@ -319,11 +319,40 @@ label {
   display: flex;
   flex-direction: row;
   justify-content: start;
-  padding: 30px;
+  padding: 20px;
 }
-
+address {
+  font-size: 18px;
+  margin: 10px 30px;
+}
+.section-contacts h2 {
+  font-size: 20px;
+  text-align: center;
+}
+/* 
 .contact-details {
   margin: 0 40px 20px;
+} */
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 270px;
+  width: 270px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 270px;
+  width: 270px;
+}
+
+#gmap_canvas {
+  width: 270px;
+  height: 270px;
+  border: none;
+  margin: 0;
 }
 
 /* Footer styling */
@@ -432,6 +461,40 @@ footer p {
     line-height: 15px;
     padding: 11px 13px;
   }
+
+  mapouter {
+    position: relative;
+    text-align: right;
+    height: 240px;
+    width: 240px;
+  }
+
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 240px;
+    width: 240px;
+  }
+
+  #gmap_canvas {
+    width: 240px;
+    height: 240px;
+    border: none;
+    margin: 0;
+  }
+  address {
+    font-size: 15px;
+  }
+
+  .section-contacts h2 {
+    font-size: 18px;
+  }
+  .section-contacts {
+    padding: 15px 5px;
+  }
+  .contacts {
+    padding: 30px 5px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -442,10 +505,10 @@ footer p {
     height: 100px;
   }
   h1 {
-    font-size: 27px;
+    font-size: 25px;
   }
   h2 {
-    font-size: 22px;
+    font-size: 20px;
   }
   label {
     font-size: 13px;
@@ -461,6 +524,11 @@ footer p {
   }
   .logo {
     width: 100%;
+  }
+  input,
+  select,
+  textarea {
+    font-size: 13px;
   }
 
   .destination .small-photo {
@@ -482,7 +550,7 @@ footer p {
   .contacts {
     flex-direction: column;
     justify-content: center;
-    padding: 30px;
+    padding: 15px;
   }
 }
 @media (max-width: 415px) {
@@ -498,11 +566,16 @@ footer p {
   }
 
   h1 {
-    font-size: 25px;
+    font-size: 23px;
   }
   h2 {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
+  }
+  .btn-branding {
+    font-size: 10px;
+    line-height: 10px;
+    padding: 7px 9px;
   }
   .top-article-photos {
     display: none;
@@ -531,4 +604,41 @@ footer p {
   .article-feedback label {
     padding: 0;
   }
-} ;
+  .section-contacts h2 {
+    font-size: 15px;
+  }
+  .feedback {
+    padding: 0;
+  }
+  address {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 325px) {
+  body {
+    font-size: 45%;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 10px;
+  }
+  .container-feedback {
+    padding: 10px 5px;
+  }
+  .section-contacts h2 {
+    display: none;
+  }
+  .contacts {
+    padding: 0;
+  }
+  address {
+    padding: 10px 15px;
+    margin: 0;
+  }
+}

@@ -39,7 +39,7 @@
 
     <main>
       <!-- Side bar -->
-     <aside class="feedback-aside">
+      <aside class="feedback-aside">
         <p>Find us on social media!</p>
         <div class="social-links">
           <a href="#" target="_blank" title="Facebook Profile"
@@ -71,91 +71,90 @@
       <!-- Main contents -->
 
       <article class="article-feedback">
-          <h1>Website Feedback</h1>
+        <h1>Website Feedback</h1>
         <section class="feedback">
-        
           <p>
             We welcome feedback from our visitors - it helps us to continually
             improve.
           </p>
           <h2>How do you rate your overall experience on our website?</h2>
-      
-<div class="rate-experience-form">
-      <div>
-            <input 
-            type="radio" 
-            id="bad" 
-            name="experience" 
-            value="bad" />
-            <label for="bad">Bad</label>
-      </div>
 
-          <div>
-            <input
-              type="radio"
-              id="average"
-              name="experience"
-              value="average"
-            />
-            <label for="average">Average</label>
+          <div class="rate-experience-form">
+            <div>
+              <input type="radio" id="bad" name="experience" value="bad" />
+              <label for="bad">Bad</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                id="average"
+                name="experience"
+                value="average"
+              />
+              <label for="average">Average</label>
+            </div>
+
+            <div>
+              <input type="radio" id="good" name="experience" value="good" />
+              <label for="good">Good</label>
+            </div>
           </div>
 
-          <div>
-            <input 
-            type="radio" 
-            id="good" 
-            name="experience" 
-            value="good" />
-            <label for="good">Good</label>
+          <div class="container-feedback">
+            <div class="row">
+              <div class="col-25">
+                <label for="name">Name:</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="name" placeholder="Your name..." />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="email">Email:</label>
+              </div>
+              <div class="col-75">
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Your email address..."
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="reason-select">I would like to:</label>
+              </div>
+              <div class="col-75">
+                <select name="reason" id="reason-select">
+                  <option value="compliment">Give a compliment</option>
+                  <option value="complaint">File a complaint</option>
+                  <option value="review">Share a review</option>
+                  <option value="suggestion">Make a suggestion</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="feedback">Feedback:</label>
+              </div>
+              <div class="col-75">
+                <textarea
+                  name="feedback"
+                  id="feedback"
+                  placeholder="Your feedback..."
+                  style="height: 100px"
+                ></textarea>
+              </div>
+            </div>
           </div>
-</div>
 
-
-<div class="container-feedback">
-<div class="row">
-  <div class="col-25">
-    <label for="name">Name:</label>
-  </div>
-  <div class="col-75">
-    <input type="text" id="name" placeholder="Your name...">
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-25">
-    <label for="email">Email:</label>
-  </div>
-  <div class="col-75">
-    <input type="email" id="email" placeholder="Your email address...">
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-25">
-    <label for="reason-select">I would like to:</label>
-  </div>
-  <div class="col-75">
-    <select name="reason" id="reason-select">
-      <option value="compliment">Give a compliment</option>
-            <option value="complaint">File a complaint</option>
-            <option value="review">Share a review</option>
-            <option value="suggestion">Make a suggestion</option>
-    </select>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-25">
-    <label for="feedback">Feedback:</label>
-  </div>
-  <div class="col-75">
-    <textarea name="feedback" id="feedback" placeholder="Your feedback..." style="height: 100px;"></textarea>
-  </div>
-</div>
-
-</section>
-
-      <button class="btn-branding">Submit</button>
+          <button class="btn-branding">Submit</button>
+        </section>
       </article>
     </main>
 
