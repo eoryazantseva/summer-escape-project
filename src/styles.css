@@ -42,17 +42,31 @@ img {
   cursor: pointer;
 }
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-top: 10px;
 }
 nav .logo {
+  -webkit-box-flex: 2;
+  -ms-flex: 2;
   flex: 2;
 }
 nav ul {
+  -webkit-box-flex: 3;
+  -ms-flex: 3;
   flex: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   padding: 0;
 }
@@ -69,6 +83,7 @@ nav li a {
 nav li a:hover,
 nav li.active a {
   color: var(--branding-color);
+  -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
 }
 
@@ -83,9 +98,17 @@ header img {
 /* Main section styling */
 
 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-top: 20px;
   background: var(--secondary-color);
@@ -95,6 +118,8 @@ main {
 /* Sidebar styling */
 
 aside {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
   margin: 30px;
   border: solid 1px var(--branding-color);
@@ -112,7 +137,11 @@ aside p {
 }
 
 .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin: 15px 0;
 }
@@ -123,6 +152,7 @@ aside p {
   padding: 5px 9px;
   font-size: 16px;
   border-radius: 10%;
+  -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
   border: solid 1px var(--branding-color);
 }
@@ -152,6 +182,7 @@ aside p {
 .search-form button:hover {
   background: var(--branding-color);
   color: white;
+  -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
 }
 
@@ -173,6 +204,8 @@ aside .widget-3 {
 /* Main content styling for all pages */
 
 article {
+  -webkit-box-flex: 3;
+  -ms-flex: 3;
   flex: 3;
   padding: 0 15px 15px 15px;
 }
@@ -189,7 +222,11 @@ section {
 /* Homepage main content styling */
 
 .top-article-photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 10px;
 }
@@ -212,6 +249,7 @@ section {
   color: var(--branding-color);
   background: white;
   cursor: pointer;
+  -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
 }
 .btn-branding-outline {
@@ -230,19 +268,29 @@ section {
   color: white;
   border-color: var(--branding-color);
   background: var(--branding-color);
+  -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
 }
 
 /* Reviews page main content styling */
 
 .destination {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 .destination .small-photo {
+  -webkit-box-flex: 2;
+  -ms-flex: 2;
   flex: 2;
 }
 .destination-info {
+  -webkit-box-flex: 3;
+  -ms-flex: 3;
   flex: 3;
   text-align: center;
 }
@@ -302,7 +350,11 @@ label {
 }
 
 .rate-experience-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .rate-experience-form div {
@@ -316,8 +368,15 @@ label {
 /* Contact page styling */
 
 .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: start;
   padding: 20px;
 }
@@ -517,9 +576,13 @@ footer p {
     font-size: 13px;
   }
   nav .logo {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
   }
   nav ul {
+    -webkit-box-flex: 4;
+    -ms-flex: 4;
     flex: 4;
   }
   .logo {
@@ -532,9 +595,13 @@ footer p {
   }
 
   .destination .small-photo {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
   }
   .destination-info {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     padding: 0 10px;
     text-align: center;
@@ -548,7 +615,12 @@ footer p {
     display: none;
   }
   .contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding: 15px;
   }
