@@ -169,7 +169,7 @@ aside p {
   font-size: 17px;
   float: left;
   width: 80%;
-  -webkit-border-radius: 0;
+  -webkit-appearance: none;
 }
 .search-form button {
   float: left;
