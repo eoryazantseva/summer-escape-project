@@ -15,25 +15,31 @@
       src="https://kit.fontawesome.com/5c10e22d0a.js"
       crossorigin="anonymous"
     ></script>
+    <meta
+      name="description"
+      content="Contact us, we'd love to answer any questions you may have"
+    />
     <title>SummerEscape - Contact us</title>
   </head>
   <body>
     <!-- Navigation bar -->
-
-    <nav>
-      <a href="/index.html" class="logo">
-        <img src="img/logo.png" class="logo" alt="logo"
-      /></a>
-      <ul>
-        <li><a href="/index.html">Homepage</a></li>
-        <li><a href="/reviews.html">Reviews</a></li>
-        <li><a href="/feedback.html">Feedback</a></li>
-        <li class="active"><a href="/contact.html">Contact</a></li>
-      </ul>
-    </nav>
-
-    <!-- Header -->
     <header>
+      <nav>
+        <a href="/index.html" class="logo">
+          <img src="img/logo.png" class="logo" alt="Summer Escape Home"
+        /></a>
+        <ul>
+          <li><a href="/index.html" title="Homepage">Homepage</a></li>
+          <li><a href="/reviews.html" title="Reviews">Reviews</a></li>
+          <li><a href="/feedback.html" title="Feedback">Feedback</a></li>
+          <li class="active">
+            <a href="/contact.html" title="Contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Header -->
+
       <img src="/img/header.jpg" alt="" />
     </header>
 
@@ -64,9 +70,11 @@
             placeholder="Search"
           />
           <label for="site-search">Search</label>
-          <button type="submit"><span class="fas fa-search"></span></button>
+          <button type="submit" aria-label="search-button">
+            <span class="fas fa-search"></span>
+          </button>
         </div>
-        <img src="/img/ad-3.jpg" class="ad-widget widget-3" alt="ad-widget" />
+        <img src="/img/ad-3.jpg" class="ad-widget widget-3" alt="" />
       </aside>
 
       <!-- Main contents -->
